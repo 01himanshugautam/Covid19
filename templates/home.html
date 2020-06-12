@@ -1,0 +1,82 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="Main_Card">
+    <div>
+        <h1>World</h1>
+    </div>
+    <div class="card_div">
+        <div class="country">
+            <div id="white">
+                <strong>COVID-19 World</strong><br>
+                <span>as on : 10 June 2020, 08:00 IST<br>(Revised) (GMT+5:30)</span>
+            </div>
+        </div>
+        <div class="card_view">
+            <div class="card_hover">
+                <div class="card" id="orange">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>7,232,313</strong><br>
+                    <span>Total Cases</span>
+                </div>
+                <div class="card" id="blue">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>124981</strong><br>
+                    <span>Active Cases</span>
+                </div>
+                <div class="card" id="green">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>3,562,286</strong><br>
+                    <span>Recovered</span>
+                </div>
+                <div class="card" id="red">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>409,437</strong><br>
+                    <span>Deaths</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more">
+        <a href="/country">COVID-19 Countrywise Status (Click)</a>
+    </div>
+</div><br><br>
+<div class="Main_Card">
+    <div>
+        <h1>India</h1>
+    </div>
+    <div class="card_div">
+        <div class="country">
+            <div id="white">
+                <strong>COVID-19 INDIA</strong><br>
+                <span>as on : 10 June 2020, 08:00 IST<br> (Revised) (GMT+5:30)</span>
+            </div>
+        </div>
+        <div class="card_view">
+            <div class="card_hover">
+                <div class="card" id="orange">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>268,139</strong><br>
+                    <span>Total Cases</span>
+                </div>
+                <div class="card" id="blue">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>124981</strong><br>
+                    <span>Active Cases</span>
+                </div>
+                <div class="card" id="green">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>124429</strong><br>
+                    <span>Recovered</span>
+                </div>
+                <div class="card" id="red">
+                    <img src="{{ url_for('static', filename='images/covid.png') }}"><br>
+                    <strong>7200</strong><br>
+                    <span>Deaths</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more">
+        <a href="/state">COVID-19 Statewise Status (Click)</a>
+    </div>
+</div><br><br> {% endblock %}

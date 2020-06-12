@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block body %}
+
+<table cellspacing="2" cellpadding="2" class="table table-striped">
+    <thead>
+        <tr>
+            <th><strong>S. No.</strong></th>
+            <th><strong>Name of State / UT</strong></th>
+            <th><strong>Active Cases*</strong></th>
+            <th><strong>Discharged*</strong></th>
+            <th><strong>Deaths**</strong></th>
+            <th><strong>Total Confirmed cases*</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in state %}
+        <tr>
+            <td>{{item.Sno}}</td>
+            <td>{{item.Name_of_State}}</td>
+            <td id="active">{{item.Active_cases}}</td>
+            <td id="discharged">{{item.Discharged}}</td>
+            <td id="death">{{item.Deaths}}</td>
+            <td>{{item.Deaths}}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <tr>
+                <td></td>
+                <td colspan="1"><strong><span>Total#</span></strong></td>
+                <td align="right" style="text-align:right;"><strong>133632</strong></td>
+                <td>
+                    <strong>135206</strong>
+                </td>
+                <td>
+                    <strong>7745</strong>
+                </td>
+                <td>
+                    <strong>276583</strong>
+                </td>
+            </tr>
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19</title>
+    <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/evolution">Evolution</a>
+        <a href="/research">Research</a>
+    </nav>
+    {% block body %} {% endblock %}
+    <footer class="footer">
+        <div class="footer-div">
+            <h2 class="hv">About Us</h2>
+            <p>The coronavirus COVID-19 is affecting 213 countries and territories around the world and 2 international conveyances. The day is reset after midnight GMT+0. The list of countries and territories and their continental regional classification
+                is based on the United Nations Geoscheme. Sources are provided under "Latest Updates".</p>
+        </div>
+        <div class="footer-div">
+            <h2>Navigation links</h2>
+            <h4 class="comp hv">Company © W3docs. All rights reserved.</h4>
+        </div>
+        <div class="footer-div">
+            <h2>Contact Us</h2>
+            <h3>Phone Number : +917351909074, +918707610806</h3>
+            <span class="fa-stack fa-lg">
+                    <i class="fa-stack-1x"></i>
+                    <a href="#"><i class="fa fa-facebook icon-fb"></i></a>
+            </span>
+            <span class="fa-stack fa-lg">
+                    <i class="fa-stack-1x"></i>
+                   <a href="params['tw_url']"> <i class="fa fa-twitter icon-tw"></i></a>
+            </span>
+            <span class="fa-stack fa-lg">
+                    <i class="fa-stack-1x"></i>
+                   <a href="params['in_url']"> <i class="fa fa-instagram icon-ig"></i></a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

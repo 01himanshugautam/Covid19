@@ -1,0 +1,11 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/covid19",
+        "prod_uri": "mysql://root:@localhost/covid19",
+        "fb_url": "https://facebook.com/01himanshugautam",
+        "tw_url": "https://twitter.com/01himanshugautam",
+        "in_url": "https://instagram.com/01himanshugautam"
+    }
+
+}
